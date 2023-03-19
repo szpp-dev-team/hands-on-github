@@ -16,6 +16,22 @@ pub fn multiply(a: i32, b: i32) -> i32 {
     sum
 }
 
+pub fn cmpmax(a: i32, b: i32) -> i32 {
+    if a < b {
+        b
+    } else {
+        a
+    }
+}
+
+pub fn cmpmin(a: i32, b: i32) -> i32 {
+    if a < b {
+        a
+    } else {
+        b
+    }
+}
+
 #[cfg(test)]
 mod tests {
     use crate::math::*;
