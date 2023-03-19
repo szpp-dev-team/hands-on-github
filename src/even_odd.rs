@@ -3,7 +3,7 @@ pub fn is_even(x: i32) -> bool {
 }
 
 pub fn is_odd(x: i32) -> bool {
-    // it works perfectly
+    // does it work...?
     is_even(x)
 }
 
