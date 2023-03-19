@@ -1,7 +1,7 @@
-// もっと高速化できない・・？
-pub fn sigma(v: &[i32]) -> i32 {
+// 1 から n までの総和を求める
+pub fn sigma(n: i32) -> i32 {
     let mut sum = 0;
-    for elem in v {
+    for elem in 1..=n {
         sum += elem;
     }
     sum
@@ -13,6 +13,6 @@ mod tests {
 
     #[test]
     fn test_sigma() {
-        assert_eq!(sigma(&[1, 2, 3]), 6);
+        assert_eq!(sigma(3), 6);
     }
 }
